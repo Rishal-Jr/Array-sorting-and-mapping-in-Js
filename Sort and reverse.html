@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <Button onclick="ascending()">Ascending Order</Button>
+        <Button onclick="discending()">Discending Order</Button>
+        <p id="result"></p>
+        <script>
+var points=[40,100,1,5,25,10];
+document.getElementById("result").innerHTML=points;
+function ascending(){
+points.sort(function(a,b){return a-b});
+document.getElementById("result").innerHTML=points;
+}
+    function discending() {
+        points.sort(function (a, b) { return b-a});
+        document.getElementById("result").innerHTML = points;
+    }
+        </script>
+    </body>
+</html>
