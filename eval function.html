@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>
+        eval
+    </title>
+</head>
+
+<body>
+    <button onclick="myfunction()">Try it</button>
+    <p id="result"></p>
+    <script>
+        function myfunction(){
+           var x=23;
+           var y=35;
+            var a=eval(x+y)+"<br>";
+            var b = eval(2*2) + "<br>";
+            var c = eval(x - y) + "<br>";
+        
+        var res=a+b+c;
+        document.getElementById("result").innerHTML=res;
+        }
+        </script>
+        </body>
+        </html>
